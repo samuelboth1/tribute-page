@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: black;
+    --main-background-color: white;
+    --main-font-family: verdana;
+}
+
+/* start nav */
+nav{
+    margin: 0;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    opacity: 0.5;
+    /* position: fixed; */
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+li a{
+    cursor: default;
+    font-family: var(--main-font-family);
+    text-decoration: none;
+    color: var(--main-color);
+}
+a:hover{
+    animation: btn-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn-hover{
+   100%{
+       color: white; 
+   }
+}
+.middle-section{
+}   
