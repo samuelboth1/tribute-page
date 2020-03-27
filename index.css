@@ -2,27 +2,35 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
-    --main-color: white;
-    --main-background-color:  #7395AE;
-    --second-background-color: #557A95;
-    --top-bottom-background-color: #5D5C61;
+    --main-color: #5D5C61;
+    --main-background-color:  lightgray;
     --hover-color: #B1A296;
 }
 body{
     background-color: var(--main-background-color);
 }
+
 /* start nav */
+
+.banner{
+    width: 85%;
+    margin: 1rem auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+    box-shadow: gray 1px 1px 5px 5px;
+}
 nav{
-    margin: 0;
-    overflow: hidden;
+    width: 85%;
+    margin: auto;
     height: 3rem;
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
-    background-color: var(--top-bottom-background-color);
 }
 ul{
     top: 15px;
@@ -50,41 +58,33 @@ a:hover{
        color: var(--hover-color); 
    }
 }
-#middle-section{
-    margin-top: 50px;
-}
-
-
 /* end header */
 /* begin main section */
 main{
     color: var(--main-color);
-    background-color: var(--second-background-color);
+    background-color: white;
     width: 90%;
     margin: auto;
     top: 50px;
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: black 1px 1px 5px 5px ;
+    box-shadow: gray 1px 1px 5px 5px;
+    text-align: left;
 
 }
 main section{
-    text-align: center;
-    margin: 1rem 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 main p{
     margin-top: 1rem;
 }
+main h3{
+    text-transform: capitalize;
+}
 
 /* end main section */
 /* begin footer section */
-footer{
-    background-color: var(--top-bottom-background-color);
-    color: var(--main-color);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 5rem;
-    margin-top: 1rem;
+.footer{
+    text-align: center;
+    padding: 1.5rem;
 }
